@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+}
+.Header-container {
+    background-color: rgb(219, 170, 35);
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    padding: 10px 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header-container ul {
+    display: flex;
+    width: 10rem;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.Nav-link {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: color 0.3s ease;
+}
+
+.Nav-link:hover {
+    color: black;
+}
+
+.Home-container {
+    width: 100%;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.Product-outer {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.Img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.Img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.product-details {
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.product-details .button-add {
+    background-color: rgb(249, 246, 246);
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.product-details .button-add:hover {
+    background-color: rgb(219, 170, 35);
+    color: whitesmoke;
+}
+
+.button-remove {
+    background-color: rgb(6, 6, 6);
+    color: whitesmoke;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+
+}
+
+.button-remove:hover {
+    background-color: rgb(199, 12, 12);
+}
+
+.Cart-Container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 65%;
+    margin: 0 auto;
+
+}
+
+.Cart-products img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.Cart-products {
+    border: 1px solid rgb(114, 111, 111);
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.cart-with-value {
+    display: flex;
+}
+
+.cart-with-value h2 {
+    margin-right: 9px;
+    background-color: black;
+    padding: 2px 5px;
+    border-radius: 10px;
+
+}
